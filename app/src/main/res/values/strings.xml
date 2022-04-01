@@ -1,4 +1,18 @@
 <resources>
     <string name="app_name">AppJava</string>
     <string name="hello_world">Hallo!</string>
+    <string name="username">  Username</string>
+    <string name="password">  Password</string>
+    <string name="login">Login</string>
+    <string name="Keluar">Log out</string>
+    <string name="register">Register</string>
+    <string name="nama">Nama</string>
+    <string name="username_reg">Masukkan Username</string>
+    <string name="password_reg">Masukkan Password</string>
+    <string name="conf_pass">Ulangi Pass</string>
+    <string name="JK">Jenis Kelamin</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kota">Kota/Kab</string>
+    <string name="alamat">Alamat</string>
+    
 </resources>

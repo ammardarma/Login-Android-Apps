@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/logo"
+        android:id="@+id/logo_regist"
+        app:civ_border_color="@color/white"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/viewnama"
+        android:layout_below="@+id/logo_regist"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_85sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/nama"
+        android:textSize="@dimen/_15sdp"
+        />
+
+    <EditText
+        android:id="@+id/namalengkap"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/logo_regist"
+        android:layout_marginTop="@dimen/_79sdp"
+        android:layout_toRightOf="@id/viewnama"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/viewusername"
+        android:layout_below="@+id/namalengkap"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/username"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:layout_width="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/namalengkap"
+        android:id="@+id/username_reg"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@id/viewusername"
+        android:textSize="@dimen/_10sdp"/>
+    <TextView
+        android:id="@+id/viewpassword"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/password"
+        android:textSize="@dimen/_15sdp"
+        android:layout_below="@+id/viewusername"/>
+    <EditText
+        android:id="@+id/password_reg"
+        android:layout_below="@+id/username_reg"
+        android:layout_toRightOf="@id/viewpassword"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/viewconfirm"
+        android:layout_below="@+id/viewpassword"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/conf_pass"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:id="@+id/confirm_pass"
+        android:layout_below="@+id/password_reg"
+        android:layout_toRightOf="@id/viewconfirm"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"
+        />
+    <TextView
+        android:id="@+id/viewjeniskelamin"
+        android:layout_below="@+id/confirm_pass"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/JK"
+        android:textSize="@dimen/_15sdp" />
+    <RadioGroup
+        android:id="@+id/radiogroupjk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_pass"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/viewjeniskelamin">
+    <RadioButton
+        android:id="@+id/lakilaki"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Laki-Laki"
+        android:textSize="@dimen/_8sdp"/>
+    <RadioButton
+        android:id="@+id/perempuan"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Perempuan"
+        android:textSize="@dimen/_8sdp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/viewprovinsi"
+        android:layout_below="@+id/viewjeniskelamin"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/provinsi"
+        android:textSize="@dimen/_15sdp" />
+
+    <Spinner
+        android:id="@+id/provinsi"
+        android:layout_below="@+id/radiogroupjk"
+        android:layout_toRightOf="@id/viewprovinsi"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"
+        />
+    <TextView
+        android:id="@+id/viewkota"
+        android:layout_below="@+id/viewprovinsi"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/kota"
+        android:textSize="@dimen/_15sdp" />
+
+    <Spinner
+        android:id="@+id/kota"
+        android:layout_below="@+id/provinsi"
+        android:layout_toRightOf="@id/viewkota"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"
+        />
+    <TextView
+        android:id="@+id/viewalamat"
+        android:layout_below="@+id/viewkota"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:text="@string/alamat"
+        android:textSize="@dimen/_15sdp" />
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:id="@+id/alamat"
+        android:layout_below="@+id/kota"
+        android:layout_toRightOf="@id/viewalamat"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_10sdp"/>
+
+    <Button
+        android:id="@+id/register_ok"
+        android:layout_below="@id/alamat"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="#4CAF50"
+        android:layout_height="wrap_content"
+        android:hint="@string/register"/>
+
+</RelativeLayout>
+</ScrollView>
