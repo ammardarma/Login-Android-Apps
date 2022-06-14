@@ -65,7 +65,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(getApplicationContext(), "Username tidak boleh kosong", Toast.LENGTH_SHORT).show();
             }else if(password.equals("")){
                 Toast.makeText(getApplicationContext(), "Pasword tidak boleh kosong", Toast.LENGTH_SHORT).show();
-            }else if(username.equals("Ammar Darma") && (password.equals("ridwan"))){
+            }else if(username.equals("admin") && (password.equals("admin"))){
                 Toast.makeText(getApplicationContext(), "Berhasil login!", Toast.LENGTH_SHORT).show();
                 editor.putString("username", username);
                 editor.putString("password", password);
